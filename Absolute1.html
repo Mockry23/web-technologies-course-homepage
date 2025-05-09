@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Absolute Positioning Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      position: relative;
+      height: 400px;
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: #90ee90;
+      border: 2px solid #006400;
+      padding: 10px;
+      position: absolute;
+    }
+
+    .top-left {
+      top: 20px;
+      left: 20px;
+    }
+
+    .bottom-right {
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Absolute 1 – Positioning Demo</h1>
+
+  <div class="box top-left">Top Left Box</div>
+  <div class="box bottom-right">Bottom Right Box</div>
+
+  <p>This demonstrates how absolute positioning lets you place elements precisely inside a relatively positioned container (in this case, the body).</p>
+</body>
+</html>
