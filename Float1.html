@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Float 1 Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 150px;
+      padding: 10px;
+      background-color: #add8e6;
+      border: 2px solid #007acc;
+      margin: 10px;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1>Float 1 – CSS Float Example</h1>
+
+  <div class="box left">
+    I’m floated left!
+  </div>
+
+  <div class="box right">
+    I’m floated right!
+  </div>
+
+  <p>
+    This paragraph wraps around the floated boxes. You can see how the content flows between them. Float allows you to align elements like images or boxes side-by-side.
+  </p>
+
+  <div class="clear"></div>
+
+  <p>
+    This paragraph appears below both floated elements because we used <code>clear: both</code>.
+  </p>
+</body>
+</html>
