@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Float 2 Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .gallery {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      background-color: #ffcccb;
+      float: left;
+      text-align: center;
+      line-height: 150px;
+      border: 2px solid #cc0000;
+      box-sizing: border-box;
+    }
+
+    .clear {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <h1>Float 2 – Mini Gallery Layout</h1>
+
+  <div class="gallery">Box 1</div>
+  <div class="gallery">Box 2</div>
+  <div class="gallery">Box 3</div>
+  <div class="gallery">Box 4</div>
+
+  <div class="clear"></div>
+
+  <p>
+    These boxes are floated left to appear side by side. This technique is useful for creating image galleries or modular layouts. We use <code>clear: both</code> to reset the layout afterward.
+  </p>
+</body>
+</html>
