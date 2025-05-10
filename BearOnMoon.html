@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bear on the Moon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    .moon {
+      background-image: url("moon.jpg");
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+
+    .bear {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="moon">
+    <h1>Bear on the Moon</h1>
+    <img src="bear.png" alt="Bear" class="bear" />
+  </div>
+
+</body>
+</html>
