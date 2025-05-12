@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cycle Lab Slideshow</title>
-  <link rel="stylesheet" href="cycle-lab.css">
+  <link rel="stylesheet" href="cycle-lab.css" />
 </head>
 <body>
   <main>
-    <h1>Image Slideshow - Cycle Lab</h1>
-    <div class="slideshow-container">
-      <img class="slide" src="bike1.jpg" alt="Bike photo 1">
-      <img class="slide" src="bike2.jpg" alt="Bike photo 2">
-      <img class="slide" src="bike3.jpg" alt="Bike photo 3">
-    </div>
+    <h1>Accessible Image Slideshow</h1>
+    <section class="slideshow" aria-label="Bike Image Slideshow">
+      <img src="bike1.jpg" alt="Mountain bike on trail" class="slide active" />
+      <img src="bike2.jpg" alt="Close-up of bike gears" class="slide" />
+      <img src="bike3.jpg" alt="Cyclist riding on the road" class="slide" />
+    </section>
   </main>
-
   <script src="cycle-lab.js"></script>
 </body>
 </html>
