@@ -4,10 +4,12 @@ const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
 
 function showSlide(index) {
-  slides. forEach((slide, i) => {
-    slides.classlist.toggle("active",i ===index);
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);  // ✅ Fix: classList, not classlist
   });
-}  
+}
+
+// Event listeners for buttons
 prevButton.addEventListener("click", () => {
   slideIndex = (slideIndex - 1 + slides.length) % slides.length;
   showSlide(slideIndex);
@@ -19,10 +21,5 @@ nextButton.addEventListener("click", () => {
 });
 
 // Optional: Keyboard navigation
-document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowLeft") {
-    prevButton.click();
-  } else if (e.key === "ArrowRight") {
-    nextButton.click();
-  }
-});
+document.addEventListener("
+
