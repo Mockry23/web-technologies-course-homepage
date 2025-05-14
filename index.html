@@ -2,86 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Genesis Moreno – Web Technologies</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header, footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #eee;
-    }
-    section {
-      margin-top: 30px;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    a {
-      text-decoration: none;
-      color: #007acc;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- 2. External CSS required -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
- <header>
-  <h1>Genesis Moreno – Web Technologies</h1>
-  <nav>
-    <ul style="list-style-type:none; display:flex; justify-content:center; gap:15px; padding:0;">
-      <li><a href="prototype.html">Prototype</a></li>
-      <li><a href="css-demo.html">CSS Demo</a></li>
-      <li><a href="float1.html">Float 1</a></li>
-      <li><a href="float2.html">Float 2</a></li>
-      <li><a href="absolute1.html">Absolute 1</a></li>
-      <li><a href="absolute2.html">Absolute 2</a></li>
-      <li><a href="flexbox-froggy.html">Flexbox Froggy</a></li>
-      <li><a href="cycle-lab.html">Cycle Lab</a></li>
-      <li><a href="mars-rover.html">Mars Rover</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- 1. Semantic header with nav -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1 class="site-title">Web Technologies – Spring 2025</h1>
+      <nav class="site-nav" role="navigation" aria-label="Main Course Navigation">
+        <ul>
+          <!-- 3. All major assignments linked -->
+          <li><a href="prototype.html">Prototype HTML</a></li>
+          <li><a href="css-demo.html">CSS Demo</a></li>
+          <li><a href="float1.html">Float 1</a></li>
+          <li><a href="float2.html">Float 2</a></li>
+          <li><a href="absolute1.html">Absolute 1</a></li>
+          <li><a href="absolute2.html">Absolute 2</a></li>
+          <li><a href="flexbox-froggy.html">Flexbox Froggy</a></li>
+          <li><a href="cycle-lab.html">Cycle Lab</a></li>
+          <li><a href="mars-rover.html">Mars Rover</a></li>
+          <li><a href="progressive-enhancement.html">Progressive Enhancement</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- 4. Main content -->
+  <main class="container" role="main">
 
-  <section>
-    <h3>Assignments</h3>
-    <ul>
-      <li><a href="Prototype.html" target="_blank">Prototype HTML Assignment</a></li>
-      <li><a href="CSS-Demo.html" target="_blank">CSS Demo</a></li>
-      <li><a href="Float1.html" target="_blank">Float 1</a></li>
-      <li><a href="Float2.html" target="_blank">Float 2</a></li>
-      <li><a href="Absolute1.html" target="_blank">Absolute 1</a></li>
-      <li><a href="Absolute2.html" target="_blank">Absolute 2</a></li>
-      <li><a href="flexbox-froggy.html" target="_blank">Flexbox Froggy Screenshot Page</a></li>
-      <li><a href="BearOnMoon.html" target="_blank">Bear on the Moon</a></li>
-   <li><a href="https://mockry23.github.io/mars-rovers/" target="_blank">Mars Rovers Project</a></li>
-      <li><a href="CycleLab.html" target="_blank">Cycle Lab Slideshow</a></li>
-      <li><a href="MarsRover-Revised.html" target="_blank">Mars Rover Revised</a></li>
-      <li><a href="ProgressiveWriting.html" target="_blank">Progressive Enhancement Writing</a></li>
-      <li><a href="MarsRover-Reflection.html" target="_blank">Mars Rover Project Reflection</a></li>
-    </ul>
-  </section>
+    <!-- 5. Course overview -->
+    <section id="overview">
+      <h2>Course Overview</h2>
+      <p>This page is your central hub for all Spring 2025 Web Technologies assignments and reflections.</p>
+    </section>
 
-  <section>
-    <h3>Flexbox Froggy Completion </h3>
-    <img src="flexbox-froggy.png" alt="Flexbox Froggy Level 24 Screenshot" width="600">
-  </section>
+    <!-- 6. Progressive Enhancement Writing -->
+    <section id="progressive-enhancement">
+      <h2>Progressive Enhancement</h2>
+      <p>Progressive enhancement is the practice of...</p>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Progressive_enhancement" target="_blank" rel="noopener">
+        Read the MDN article on Progressive Enhancement →
+      </a></p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Genesis Moreno</p>
+    <!-- 7. Mars Rover Reflection (required revision + reflection) -->
+    <section id="mars-reflection">
+      <h2>Mars Rover Project Revision & Reflection</h2>
+      <p><strong>Revision:</strong> Based on feedback, I improved semantic tags, added alt text to images, and optimized CSS for mobile.</p>
+      <p><strong>Reflection:</strong> Through this project I learned the importance of accessibility and responsive media queries. Challenges included…</p>
+      <p><a href="mars-rover.html">View the final Mars Rover project →</a></p>
+    </section>
+
+  </main>
+
+  <!-- 8. Semantic footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Genesis Moreno</p>
+    </div>
   </footer>
 
 </body>
 </html>
+
