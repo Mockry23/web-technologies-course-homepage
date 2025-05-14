@@ -9,24 +9,26 @@
   <meta name="theme-color" content="#222222" />
   <title>Genesis Moreno – Web Technologies</title>
   <link rel="stylesheet" href="css/styles.css" />
+
   <style>
-    /* Embedded critical nav styles for visibility */
+    /* Critical Embedded Styles for Responsive Navigation */
     .nav {
       background-color: #222;
-      position: relative;
     }
     .nav__container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem;
       flex-wrap: wrap;
     }
     .nav__logo {
       color: #fff;
+      font-size: 1.3rem;
       font-weight: bold;
       text-decoration: none;
-      font-size: 1.2rem;
     }
     .nav__toggle {
       display: none;
@@ -37,12 +39,12 @@
     .nav__toggle-icon,
     .nav__toggle-icon::before,
     .nav__toggle-icon::after {
-      display: block;
-      width: 24px;
-      height: 2px;
-      background: #fff;
-      position: relative;
       content: '';
+      background: #fff;
+      display: block;
+      height: 2px;
+      width: 24px;
+      position: relative;
     }
     .nav__toggle-icon::before {
       position: absolute;
@@ -54,24 +56,30 @@
     }
     .nav__list {
       display: flex;
-      gap: 1rem;
+      flex-wrap: wrap;
       list-style: none;
-      margin: 0;
+      gap: 1rem;
+      margin: 1rem 0 0;
+      padding: 0;
     }
     .nav__link {
-      color: #ddd;
+      color: #ccc;
       text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 4px;
     }
-    .nav__link:hover {
+    .nav__link:hover,
+    .nav__link:focus {
+      background-color: #444;
       color: #fff;
     }
+
     @media (max-width: 768px) {
       .nav__toggle {
         display: block;
       }
       .nav__list {
         flex-direction: column;
-        background: #222;
         width: 100%;
         max-height: 0;
         overflow: hidden;
@@ -80,22 +88,18 @@
       .nav__list--open {
         max-height: 1000px;
       }
-      .nav__link {
-        display: block;
-        text-align: center;
-        padding: 1rem;
-      }
     }
   </style>
 </head>
+
 <body>
   <header class="nav" role="banner">
-    <div class="container nav__container">
+    <div class="nav__container">
       <a href="index.html" class="nav__logo">WebTech 2025</a>
       <button class="nav__toggle" aria-label="Toggle navigation">
         <span class="nav__toggle-icon"></span>
       </button>
-      <ul class="nav__list">
+      <ul class="nav__list" role="navigation" aria-label="Main course navigation">
         <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="Prototype.html" class="nav__link">Prototype HTML</a></li>
         <li><a href="CSS-Demo.html" class="nav__link">CSS Demo</a></li>
@@ -116,7 +120,7 @@
   <main class="container" role="main">
     <section id="overview" class="card">
       <h2>Course Overview</h2>
-      <p>This is my  central hub for all Spring 2025 Web Technologies assignments and reflections.</p>
+      <p>This is my central hub for all Spring 2025 Web Technologies assignments and reflections.</p>
     </section>
 
     <section id="progressive-enhancement" class="card">
@@ -140,11 +144,10 @@
   </footer>
 
   <script>
+    // Toggle navigation menu on mobile
     document.querySelector('.nav__toggle').addEventListener('click', () => {
       document.querySelector('.nav__list').classList.toggle('nav__list--open');
     });
   </script>
 </body>
 </html>
-
-
