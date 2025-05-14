@@ -2,63 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Genesis Moreno's course homepage for Spring 2025 Web Technologies." />
+  <meta name="author" content="Genesis Moreno" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#222222" />
   <title>Genesis Moreno – Web Technologies</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container">
-      <h1 class="site-title">Web Technologies – Spring 2025</h1>
-      <nav class="site-nav" role="navigation" aria-label="Main Course Navigation">
-        <ul>
-          <li><a href="prototype.html">Prototype HTML</a></li>
-          <li><a href="css-demo.html">CSS Demo</a></li>
-          <li><a href="float1.html">Float 1</a></li>
-          <li><a href="float2.html">Float 2</a></li>
-          <li><a href="absolute1.html">Absolute 1</a></li>
-           <li><a href="absolute2.html">Absolute 2</a></li>
-          <li><a href="flexbox-froggy.html">Flexbox Froggy</a></li>
-          <li><a href="cycle-lab.html">Cycle Lab</a></li>
-          <li><a href="mars-rover.html">Mars Rover</a></li>
-          <li><a href="progressive-enhancement.html">Progressive Enhancement</a></li>
-        </ul>
-      </nav>
+  <header class="nav" role="banner">
+    <div class="container nav__container">
+      <a href="index.html" class="nav__logo">WebTech 2025</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">
+        <span class="nav__toggle-icon"></span>
+      </button>
+      <ul class="nav__list">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="prototype.html" class="nav__link">Prototype HTML</a></li>
+        <li><a href="css-demo.html" class="nav__link">CSS Demo</a></li>
+        <li><a href="float1.html" class="nav__link">Float 1</a></li>
+        <li><a href="float2.html" class="nav__link">Float 2</a></li>
+        <li><a href="absolute1.html" class="nav__link">Absolute 1</a></li>
+        <li><a href="absolute2.html" class="nav__link">Absolute 2</a></li>
+        <li><a href="flexbox-froggy.html" class="nav__link">Flexbox Froggy</a></li>
+        <li><a href="cycle-lab.html" class="nav__link">Cycle Lab</a></li>
+        <li><a href="bearonmoon.html" class="nav__link">Bear on Moon</a></li>
+        <li><a href="mars-rover.html" class="nav__link">Mars Rover Project</a></li>
+        <li><a href="progressive-enhancement.html" class="nav__link">Progressive Enhancement</a></li>
+        <li><a href="mars-reflection.html" class="nav__link">Mars Rover Reflection</a></li>
+      </ul>
     </div>
   </header>
-  <!-- 4. Main content -->
+
   <main class="container" role="main">
-    <!-- 5. Course overview -->
-    <section id="overview">
-      <h2>Course Overview<
-        <p>This page is your central hub for all Spring 2025 Web Technologies assignments and reflections.</p>
+    <section id="overview" class="card">
+      <h2>Course Overview</h2>
+      <p>My name is Genesis , Im new in web developent this is my hub for all Spring 2025 Web Technologies assignments and reflections.</p>
     </section>
-    <!-- 6. Progressive Enhancement Writing -->
-    <section id="progressive-enhancement">
+
+    <section id="progressive-enhancement" class="card">
       <h2>Thoughts on Progressive Enhancement</h2>
-      <p>Progressive enhancement is the practice of basic user experience in my opinion making sure that across devices and browsers the stability is prominent. 
-        In web development we ensure that all devices are able to have the same experience versus one browser only having the supported features. User experience is gold in this field of modern web development. </p>
-      <p><a href="https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/" target="_blank" rel="noopener">
-        Read the freecodecamp  article on Progressive Enhancement →
-        </a></p>
+      <p>Progressive enhancement is the practice of basic user experience in my opinion—making sure that across devices and browsers, the stability is prominent.
+      In web development we ensure that all devices are able to have the same experience versus one browser only having the supported features. User experience is gold in this field of modern web development.</p>
+      <p><a href="https://www.freecodecamp.org/news/what-is-progressive-enhancement-and-why-it-matters-e80c7aaf834a/" target="_blank" rel="noopener">Read the freeCodeCamp article on Progressive Enhancement →</a></p>
     </section>
-    <!-- 7. Mars Rover Reflection (required revision + reflection) -->
-    <section id="mars-reflection">
+
+    <section id="mars-reflection" class="card">
       <h2>Mars Rover Project Revision & Reflection</h2>
-      <p><strong>Revision:</strong>
-        Through this project I learned the importance of accessibility and responsive media queries. 
-        Challenges included staying awake through the coding , lack of more energy drinks , the alt editing part I had to double check this would work on my end.
-      Optimization was of the essence during this training.</p>
+      <p><strong>Revision:</strong> Through this project I learned the importance of accessibility and responsive media queries. 
+        Challenges included staying awake through the coding, lack of more energy drinks, the alt editing part I had to double-check to ensure it would work on my end. Optimization was of the essence during this training.</p>
       <p><a href="mars-rover.html">View the final Mars Rover project →</a></p>
     </section>
   </main>
-  <!-- 8. Semantic footer -->
+
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <p>© 2025 Genesis Moreno</p>
     </div>
   </footer>
+
+  <script>
+    document.querySelector('.nav__toggle').addEventListener('click', () => {
+      document.querySelector('.nav__list').classList.toggle('nav__list--open');
+    });
+  </script>
 </body>
-      </html>
+</html>
+
 
 
