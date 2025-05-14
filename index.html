@@ -9,6 +9,84 @@
   <meta name="theme-color" content="#222222" />
   <title>Genesis Moreno – Web Technologies</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Embedded critical nav styles for visibility */
+    .nav {
+      background-color: #222;
+      position: relative;
+    }
+    .nav__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    .nav__logo {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    .nav__toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .nav__toggle-icon,
+    .nav__toggle-icon::before,
+    .nav__toggle-icon::after {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      position: relative;
+      content: '';
+    }
+    .nav__toggle-icon::before {
+      position: absolute;
+      top: -8px;
+    }
+    .nav__toggle-icon::after {
+      position: absolute;
+      bottom: -8px;
+    }
+    .nav__list {
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+      margin: 0;
+    }
+    .nav__link {
+      color: #ddd;
+      text-decoration: none;
+    }
+    .nav__link:hover {
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      .nav__toggle {
+        display: block;
+      }
+      .nav__list {
+        flex-direction: column;
+        background: #222;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      .nav__list--open {
+        max-height: 1000px;
+      }
+      .nav__link {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="nav" role="banner">
@@ -19,15 +97,15 @@
       </button>
       <ul class="nav__list">
         <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="Prototype.html" class="nav__link">Prototype HTML</a></li>
-        <li><a href="CSS-Demo.html" class="nav__link">CSS Demo</a></li>
-        <li><a href="Float1.html" class="nav__link">Float 1</a></li>
-        <li><a href="Float2.html" class="nav__link">Float 2</a></li>
-        <li><a href="Absolute1.html" class="nav__link">Absolute 1</a></li>
-        <li><a href="Absolute2.html" class="nav__link">Absolute 2</a></li>
+        <li><a href="prototype.html" class="nav__link">Prototype HTML</a></li>
+        <li><a href="css-demo.html" class="nav__link">CSS Demo</a></li>
+        <li><a href="float1.html" class="nav__link">Float 1</a></li>
+        <li><a href="float2.html" class="nav__link">Float 2</a></li>
+        <li><a href="absolute1.html" class="nav__link">Absolute 1</a></li>
+        <li><a href="absolute2.html" class="nav__link">Absolute 2</a></li>
         <li><a href="flexbox-froggy.html" class="nav__link">Flexbox Froggy</a></li>
         <li><a href="cycle-lab.html" class="nav__link">Cycle Lab</a></li>
-        <li><a href="BearOnMoon.html" class="nav__link">Bear on Moon</a></li>
+        <li><a href="bearonmoon.html" class="nav__link">Bear on the Moon</a></li>
         <li><a href="mars-rover.html" class="nav__link">Mars Rover Project</a></li>
         <li><a href="progressive-enhancement.html" class="nav__link">Progressive Enhancement</a></li>
         <li><a href="mars-reflection.html" class="nav__link">Mars Rover Reflection</a></li>
@@ -38,7 +116,7 @@
   <main class="container" role="main">
     <section id="overview" class="card">
       <h2>Course Overview</h2>
-      <p>My name is Genesis , Im new in web developent this is my hub for all Spring 2025 Web Technologies assignments and reflections.</p>
+      <p>This page is your central hub for all Spring 2025 Web Technologies assignments and reflections.</p>
     </section>
 
     <section id="progressive-enhancement" class="card">
@@ -50,8 +128,7 @@
 
     <section id="mars-reflection" class="card">
       <h2>Mars Rover Project Revision & Reflection</h2>
-      <p><strong>Revision:</strong> Through this project I learned the importance of accessibility and responsive media queries. 
-        Challenges included staying awake through the coding, lack of more energy drinks, the alt editing part I had to double-check to ensure it would work on my end. Optimization was of the essence during this training.</p>
+      <p><strong>Revision:</strong> Through this project I learned the importance of accessibility and responsive media queries. Challenges included staying awake through the coding, lack of more energy drinks, the alt editing part I had to double-check to ensure it would work on my end. Optimization was of the essence during this training.</p>
       <p><a href="mars-rover.html">View the final Mars Rover project →</a></p>
     </section>
   </main>
@@ -69,6 +146,5 @@
   </script>
 </body>
 </html>
-
 
 
