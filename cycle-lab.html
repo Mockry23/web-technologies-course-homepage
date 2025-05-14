@@ -2,24 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cycle Lab Slideshow</title>
-  <link rel="stylesheet" href="cycle-lab.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Cycle Lab - Accessible Image Slideshow">
+  <meta name="keywords" content="Web Technologies, Slideshow, Accessible, HTML5, CSS, JS">
+  <meta name="robots" content="noindex">
+  <title>Cycle Lab – Genesis Moreno</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <main>
-    <h1>Accessible Image Slideshow</h1>
-    <section class="slideshow" aria-label="My Image Slideshow" role="region">
+  <header class="site-header" role="banner">
+    <h1>Web Technologies – Spring 2025</h1>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mars-rover.html">Mars Rover</a></li>
+        <li><a href="bear-on-moon.html">Bear on Moon</a></li>
+        <li><a href="cycle-lab.html" aria-current="page">Cycle Lab</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <h2>Accessible Image Slideshow</h2>
+    <section class="slideshow" aria-label="Image slideshow" role="region">
       <button class="prev" aria-label="Previous slide">❮</button>
       <div class="slides">
-        <img src="photo1.jpg" alt="Hi - I created this" class="slide active" />
-        <img src="photo2.jpg" alt="Coding meets human" class="slide" />
-        <img src="photo3.jpg" alt="Web tech journey" class="slide" />
+        <img src="photo1.jpg" alt="First image created for the project" class="slide active" />
+        <img src="photo2.jpg" alt="Second image showcasing technology" class="slide" />
+        <img src="photo3.jpg" alt="Third image reflecting design" class="slide" />
       </div>
       <button class="next" aria-label="Next slide">❯</button>
     </section>
   </main>
 
-  <script src="cycle-lab.js"></script>
+  <footer>
+    <p>Created by Genesis Moreno | <a href="mailto:youremail@example.com">Contact Me</a></p>
+    <p><a href="https://ualr.edu" target="_blank" rel="noopener">University of Arkansas at Little Rock</a></p>
+  </footer>
+
+  <script src="js/cycle-lab.js"></script>
 </body>
 </html>
