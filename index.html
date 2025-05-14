@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Genesis Moreno — Web Technologies 2025</title>
-  <meta name="description" content="Course homepage for Spring 2025 Web Technologies—assignments, demos, reflections.">
-  <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Genesis Moreno's Spring 2025 Web Technologies course homepage. View all completed assignments, projects, and reflections." />
+  <meta name="author" content="Genesis Moreno" />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#222222" />
+
+  <title>Genesis Moreno – Web Technologies</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
+  <!-- ✅ Navigation with mobile toggle -->
   <header class="nav" role="banner">
     <div class="container nav__container">
       <a href="index.html" class="nav__logo">WebTech 2025</a>
-      <button class="nav__toggle" aria-label="Toggle menu">
+
+      <button class="nav__toggle" aria-label="Toggle navigation">
         <span class="nav__toggle-icon"></span>
       </button>
+
       <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="planning.html" class="nav__link">Planning</a></li>
-        <li class="nav__item"><a href="storyboard.html" class="nav__link">Storyboarding</a></li>
-        <li class="nav__item"><a href="resources.html" class="nav__link">Resources</a></li>
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="Prototype.html" class="nav__link">Prototype HTML</a></li>
+        <li><a href="CSS-Demo.html" class="nav__link">CSS Demo</a></li>
+        <li><a href="Float1.html" class="nav__link">Float 1</a></li>
+        <li><a href="Float2.html" class="nav__link">Float 2</a></li>
+        <li><a href="Absolute1.html" class="nav__link">Absolute 1</a></li>
+        <li><a href="Absolute2.html" class="nav__link">Absolute 2</a></li>
+        <li><a href="flexbox-froggy.html" class="nav__link">Flexbox Froggy</a></li>
+        <li><a href="cycle-lab.html" class="nav__link">Cycle Lab</a></li>
+        <li><a href="BearOnMoon.html" class="nav__link">Bear on Moon</a></li>
+        <li><a href="mars-rover.html" class="nav__link">Mars Rover</a></li>
+        <li><a href="progressive-enhancement.html" class="nav__link">Progressive Enhancement</a></li>
+        <li><a href="mars-reflection.html" class="nav__link">Mars Rover Reflection</a></li>
       </ul>
     </div>
   </header>
 
+  <!-- ✅ Main Content -->
   <main class="container" role="main">
-    <!-- Course Overview -->
-    <section id="overview" class="card">
-      <h1>Spring 2025 Web Technologies</h1>
-      <p>My name is Genesis , and Im new at web development. This is my central hub for 
-        all assignments, projects, and reflections.</p>
-    </section>
-
-    <!-- Assignments List -->
-    <section id="assignments" class="card">
-      <h2>Required Assignments</h2>
-      <ul>
-        <li><a href="prototype.html">Prototype HTML Assignment</a></li>
-        <li><a href="css-demo.html">CSS Demo</a></li>
-        <li><a href="float1.html">Positioning: Float 1</a></li>
-        <li><a href="float2.html">Positioning: Float 2</a></li>
-        <li><a href="absolute1.html">Positioning: Absolute 1</a></li>
-        <li><a href="absolute2.html">Positioning: Absolute 2</a></li>
-        <li><a href="flexbox-froggy.html">Flexbox Froggy</a></li>
-        <li><a href="cycle-lab.html">Cycle Lab Slideshow</a></li>
-        <li><a href="corel-logo.html">Corel Vector Logo</a></li>
-        <li><a href="mars-rover.html">Mars Rover Project</a></li>
-        <li><a href="progressive-enhancement.html">Progressive Enhancement Essay</a></li>
-        <li><a href="mars-reflection.html">Mars Rover Reflection</a></li>
-      </ul>
-    </section>
-
-    <!-- Quick Link to Reflection -->
-    <section id="quick-reflection" class="card">
-      <h2>Thoughts on Progressive Enhancement</h2>
-      <p><a href="progressive-enhancement.html">Read essay →</a></p>
+    <section class="card">
+      <h1>Genesis Moreno – Spring 2025 Web Technologies</h1>
+      <p>Welcome to my course homepage. Below are all my assignments and reflections.</p>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
+  <!-- ✅ Footer -->
+  <footer class="site-footer">
     <div class="container">
       <p>© 2025 Genesis Moreno</p>
     </div>
   </footer>
 
-  <!-- Mobile menu toggle -->
+  <!-- ✅ JavaScript for mobile toggle -->
   <script>
     document.querySelector('.nav__toggle').addEventListener('click', () => {
       document.querySelector('.nav__list').classList.toggle('nav__list--open');
